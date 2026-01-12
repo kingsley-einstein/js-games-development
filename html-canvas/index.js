@@ -27,6 +27,25 @@ function run() {
     context.lineTo(190, 140);
     context.closePath();
     context.stroke();
+
+    // Draw an arc
+    context.beginPath();
+    context.arc(300, 600, 40, 0, Math.PI, true);
+    context.closePath();
+    context.stroke();
+
+    // Draw a full circle
+    context.beginPath();
+    context.arc(300, 650, 40, 0, 2 * Math.PI, true);
+    context.fill();
+
+    // Draw a text
+    context.fillText("This is some text", 800, 200);
+    context.font = "5pt Arial";
+    context.strokeText("This is another text", 800, 500);
+
+    context.fillStyle = "red";
+    context.fillRect(800, 500, 100, 50);
   }
 }
 
